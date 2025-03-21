@@ -35,7 +35,6 @@ cd organization_connect
 
 ### 2. Установка Docker и Docker Compose
 Убедитесь, что Docker и Docker Compose установлены на вашем компьютере. Инструкции по установке [Docker](https://docs.docker.com/get-started/get-docker/) и [Docker Compose](https://docs.docker.com/compose/install/).
-Убедитесь, что Docker и Docker Compose установлены на вашем компьютере. Инструкции по установке [Docker](https://docs.docker.com/get-started/get-docker/) и [Docker Compose](https://docs.docker.com/compose/install/).
 
 ### 3. Настройка переменных окружения
 Создайте файл .env в корневой директории проекта и добавьте необходимые переменные окружения:
@@ -56,8 +55,13 @@ DB_PASS=your_password
 docker-compose up --build
 ```
 
-### 5. Заполните базу данных
-Можете взять прилагаемые данные в виде запроса в файле query.txt, скопировать их в СУБД и наполнить таблицы.
+### 5. Создайте базу данных и заполните её
+В корневом каталоге в командной строке напишите
+```bash
+alembic upgrade head
+```
+
+Можете взять прилагаемые данные в виде запросы в файле query.txt, скопировать их в СУБД и наполнить таблицы, сделать SQL-запросы.
 
 ### 6. Проверка работы приложения
 После успешного запуска контейнеров, перейдите по адресу ```http://localhost:8000``` в вашем веб-браузере
