@@ -1,4 +1,4 @@
-# FastAPI Project
+# Organization connect
 
 ## Назначение проекта
 
@@ -33,10 +33,11 @@ git clone https://github.com/AlexeyM01/organization_connect
 cd organization_connect
 ```
 
-###2. Установка Docker и Docker Compose
+### 2. Установка Docker и Docker Compose
+Убедитесь, что Docker и Docker Compose установлены на вашем компьютере. Инструкции по установке [Docker](https://docs.docker.com/get-started/get-docker/) и [Docker Compose](https://docs.docker.com/compose/install/).
 Убедитесь, что Docker и Docker Compose установлены на вашем компьютере. Инструкции по установке [Docker](https://docs.docker.com/get-started/get-docker/) и [Docker Compose](https://docs.docker.com/compose/install/).
 
-###3. Настройка переменных окружения
+### 3. Настройка переменных окружения
 Создайте файл .env в корневой директории проекта и добавьте необходимые переменные окружения:
 
 ```text
@@ -48,14 +49,17 @@ DB_PASS=your_password
 
 ```
 
-###4. Сборка и запуск контейнеров
+### 4. Сборка и запуск контейнеров
 Запустите следующую команду для сборки и запуска контейнеров:
 
 ```bash
 docker-compose up --build
 ```
 
-###5. Проверка работы приложения
+### 5. Заполните базу данных
+Можете взять прилагаемые данные в виде запроса в файле query.txt, скопировать их в СУБД и наполнить таблицы.
+
+### 6. Проверка работы приложения
 После успешного запуска контейнеров, перейдите по адресу ```http://localhost:8000``` в вашем веб-браузере
 
 ##Примеры использования
