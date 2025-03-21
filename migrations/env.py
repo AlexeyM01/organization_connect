@@ -1,3 +1,6 @@
+"""
+migrations/env.py
+"""
 import os
 import sys
 from logging.config import fileConfig

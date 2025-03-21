@@ -1,5 +1,6 @@
 """
-models.py
+src/models.py
+Здесь хранится описание моделей
 """
 import re
 from pydantic import BaseModel, field_validator

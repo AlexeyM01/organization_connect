@@ -1,3 +1,8 @@
+"""
+src/main.py
+Здесь производятся основные запросы к базе данных.
+При увеличении функциональности приложения перенести в файл query
+"""
 from fastapi import FastAPI, Depends
 from fastapi.responses import JSONResponse
 from sqlalchemy.future import select

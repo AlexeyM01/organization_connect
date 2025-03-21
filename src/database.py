@@ -1,5 +1,6 @@
 """
-database.py
+src/database.py
+Здесь выполняется подключение к базе данных
 """
 
 from sqlalchemy import MetaData
